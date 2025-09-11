@@ -1,0 +1,24 @@
+[project]
+name = "botman2"
+version = "0.1.0"
+description = "Telegram bot for cafe reports (python-telegram-bot, asyncpg, APScheduler)"
+requires-python = ">=3.10"
+
+dependencies = [
+    "python-telegram-bot>=20.0",
+    "asyncpg>=0.27",
+    "apscheduler>=3.9",
+    "SQLAlchemy>=1.4",
+    "psycopg2-binary>=2.9",
+    "python-dotenv>=1.0.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "black",
+    "ruff",
+]
+
+[project.scripts]
+botman2 = "app.main:main"

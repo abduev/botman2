@@ -16,4 +16,4 @@ RUN uv sync --frozen
 COPY . .
 
 # Запуск бота
-CMD ["uv", "run", "-m", "core.main"]
+CMD ["uv", "run", "-m", "app.main"]
